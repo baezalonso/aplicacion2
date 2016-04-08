@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo css-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo javascript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/aciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/atlixco.jpg','imagenes/santa1.jpg','imagenes/santa3.jpg','imagenes/santa4.jpg','imagenes/engrillados.jpg','imagenes/santa6.jpg')">
+<div data-role="page" id="Principal" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+  <h1>Semana Santa</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <center>
+      <div>
+   <div>
+     <img src="imagenes/letrerosanta.jpg" width="70%" height="50%"> </div>
+     </div>
+     </div>
+     </center>
+<div>
+<ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-"b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Significado de la semana Santa</h2>
+<p>se muestra que significan los diferentes dias de la semana santa</p>
+    </a>
+    </li>
+   <li class="ui-firs-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> Domingo de pascua </h2>
+   <p>muestra lo que significa y que se hace en domingo de pascua </p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Fechas de semana santa  </h2>
+   <p>como se establece las fechas de semana santa</p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> Celebracion en Atlixco </h2>
+   <p>te mostrara un pequeño resumen de como lo celebran en Atlixco</p>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> Iztapalapa </h2>
+   <p>Se mostrara como se celebra la semana santa en Iztapalapa</p>
+   </a>
+   </li>
+   <li class="ui-firs-child ui-last-child">
+   <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> Vaticano </h2>
+   <p>se mostrara lo que se hace en el Vaticano </p>
+   </a>
+   </li>
+   <li class="ui-firs-child ui-last-child">
+   <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> Jerusalen </h2>
+   <p>te mostrara como celebran en Jerusalen </p>
+   </a>
+   </li>
+   <li class="ui-firs-child ui-last-child">
+   <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Celebracion en Estados Unidos  </h2>
+   <p>te mostrara como se celebra semana santa en Esatdos Unidos </p>
+   </a>
+   </li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="c">
+  <div>
+   <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <div>
+  <h4>Aplicacion 2</h4>
+  <h4> Cesar Arturo Baez Alonso</h4>
+  </div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
+   <center>
+   <h1> significado de la semana santa</h1>
+   </div>
+</center>
+   <div data-role="content" align="center">
+   <div data-role="collapsible" data-content-theme="false">
+      <h1>domingo de ramos</h1>
+     <div>
+     <img src="imagenes/ramos.jpg" width="30%" height="30%"> </div>
+     <p>El Domingo de Ramos es aquel en el que los cristianos conmemoran la entrada de Jesús de Nazaret en Jerusalén, aclamado por una multitud exultante, días antes de su pasión, muerte y resurrección, según testimonian los cuatro evangelios canónicos. Dicho domingo es el pórtico espiritual de la Semana Santa. La fecha de su celebración es movible, enmarcada en el lapso de los meses de marzo o abril.</p>
+     </div>
+     </div>
+<div data-role="content" align="center">
+  <div data-role="collapsible" data-content-theme="false">
+      <h1>jueves santo</h1>
+    <div>
+     <img src="imagenes/jueves.jpg" width="30%" height="30%"> </div>
+     <p>El Jueves Santo es una fiesta cristiana que se celebra el jueves anterior al Domingo de Resurrección, dentro de la Semana Santa, y que abre el Triduo Pascual. En este día la Iglesia católica conmemora la institución de la Eucaristía en la Última Cena y el lavatorio de los pies realizado por Jesús.</p>
+     </div>
+     </div>
+<div data-role="content" align="center">
+   <div data-role="collapsible" data-content-theme="false">
+      <h1>viernes santo</h1>
+       <div>
+     <img src="imagenes/viernes.jpg" width="30%" height="30%"> </div>
+     <p>El Viernes Santo es una de las principales celebraciones del Cristianismo, dentro de la denominada Semana Santa. Este día se recuerda la muerte de Jesús de Nazaret.
+En este día, la Iglesia Católica manda a sus fieles guardar ayuno y abstinencia de carne como penitencia..</p>
+     </div>
+</div>
+<div data-role="content" align="center">
+  <div data-role="collapsible" data-content-theme="false">
+      <h1>sabado santo</h1>
+    <div>
+     <img src="imagenes/sabado.jpg" width="30%" height="30%"> </div>
+     <p>El Sábado Santo es el nombre que algunas denominaciones cristianas dan al sábado de la semana del primer plenilunio de primavera. Es el tercer día del Triduo Pascual, que concluye con las primeras Vísperas del Domingo de Resurrección culminando así para los cristianos la Semana Santa. Tras conmemorar el día anterior la muerte de Cristo en la Cruz, se espera el momento de la Resurrección. Es la conmemoración de Jesús en el sepulcro y su Descenso al Abismo. Una vez ha anochecido, tiene lugar la principal celebración cristiana del año: la Vigilia Pascual..</p>
+     </div>
+     </div>
+<div data-role="content" align="center">
+  <div data-role="collapsible" data-content-theme="false">
+      <h1>domingo de resurrexion</h1>
+    <div>
+     <img src="imagenes/domingo.jpg" width="30%" height="30%"> </div>
+     <p>El Domingo de Resurrección o de Pascua es la fiesta más importante para todos los católicos, ya que con la Resurrección de Jesús es cuando adquiere sentido toda nuestra religión.
+Cristo triunfó sobre la muerte y con esto nos abrió las puertas del Cielo. En la Misa dominical recordamos de una manera especial esta gran alegría. Se enciende el Cirio Pascual que representa la luz de Cristo resucitado y que permanecerá prendido hasta el día de la Ascensión, cuando Jesús sube al Cielo.
+.</p>
+     </div>
+     </div>
+<div data-role="footer" data-theme="b">
+  <h4>cesar arturo baez alonso</h4>
+  </div>
+ </div>
+ </div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
+   <center>
+   <h1> domingo de pascua</h1>
+   </div>
+   </center>
+<div data-role="content" align="center">
+   <div>
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>fotos sobre el domingo de pascua</h1>
+      <div>
+     <br>
+      </div>
+   <div>
+     <img src="imagenes/pascua.jpg" width="35%" height="35%"> </div>
+     <div>
+     <img src="imagenes/pascua2.jpg" width="35%" height="35%"> </div>
+     </div>
+     </div>
+<div>
+</div>
+</div>
+  <p>La Pascua1 2 ―también llamada Pascua Florida,1 Domingo de Pascua,3 4 Domingo de Resurrección3 o Domingo de Gloria― es la fiesta central del cristianismo,5 6 en la que se conmemora, de acuerdo con los evangelios canónicos, la resurrección de Jesús al tercer día después de haber sido crucificado.
+La Pascua marca el final de la Semana Santa, en la que se conmemora la crucifixión y muerte de Jesús. A la Semana Santa le sigue un período de cincuenta días llamado Tiempo pascual, que termina con el Domingo de Pentecostés.7</p>
+  <p>El Domingo de Pascua es una celebración que no se fija en relación al calendario civil. 2 El Primer Concilio de Nicea (año 325) estableció la fecha de la Pascua como el primer domingo después de la luna llena tras el equinoccio de primavera en el hemisferio norte.8 La fecha por tanto, varía entre el 22 de marzo y el 25 de abril.9 10 El cristianismo oriental basa sus cálculos en el calendario juliano, por lo que su fecha se sitúa entre el 4 de abril y 8 de mayo.</p>
+  <p>Durante este día se celebran en distintos lugares del mundo procesiones religiosas, así como celebraciones litúrgicas.11 Las costumbres del Domingo de Resurrección varían en todo el mundo cristiano, pero la decoración de los huevos de Pascua es algo común en muchos países del mundo occidental.12</p>
+  <div>
+     <img src="imagenes/pascua3.jpg" width="20%" height="20%"></div>
+</div>
+<div data-role="footer" data-theme="b">
+  <h4>cesar arturo baez alonso</h4>
+</div>
+</div>
+</div>
+ <p>&nbsp;</p>
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
+   <center>
+   <h1>fechas para la semana santa</h1>
+   </div>
+   </center>
+   <div data-role="content" align="center">
+   <div>
+    <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>calendario</h1>
+      <div>
+      <br>
+      </div>
+   <div>
+     <img src="imagenes/calendario.jpg" width="50%" height="50%"> </div>
+     </div>
+     </div>
+<div>
+</div>
+  </div>
+  <p>La Pascua es una fiesta que varía de año a año en relación con nuestros calendarios, pues está basada en el calendario Judío que se guía por la luna. El día central para calcular la Pascua y la cuaresma es el día de la Resurrección del Señor. Para saber la fecha de la cuaresma y su inicio, el miércoles de ceniza, debemos contar 40 días hacia atrás desde el domingo anterior al domingo de Resurrección (domingo de ramos o de palmas). Después del domingo de Resurrección se cuentan 40 días hasta la Ascensión (aunque la fiesta se celebra el Domingo siguiente); una semana después de la Ascensión se celebra  Pentecostés (aunque bíblicamente ocurre a los 50 días de la Resurrección).</p>
+  <br>
+  <h3>como se establece la fecha para semana santa?</h3>
+  <p>La Iglesia Católica quiso ya desde un principio, conmemorar la muerte de Jesús el mismo día que lo relatan los evangelios. Ha sido tradición en los judíos celebrar su pascua sirviéndose del calendario lunar; por supuesto en la época de Jesús, la pascua se regía por los ciclos de la luna. Partiendo de esto, el calendario de Semana Santa, se obtiene a partir del día de la Resurrección, que es el domingo siguiente a la luna llena del mes de Nissan (el mes de los judíos) que corresponde a los días entre el 22 de marzo y el 25 de abril. Dicho de otra manarea, este día es el domingo después de la primera luna llena de primavera (la primavera, por lo general, comienza el 21 de marzo). 
+El Concilio de Nicea (325), aprobó esta manera de calcular el día de la Resurrección del Señor, tomándose el cuidado de que la pascua judía no coincidiera con la Pascua Cristiana. </p>
+</div>
+ <div data-role="footer" data-theme="b">
+   <h4>cesar arturo baez alonso</h4>
+ </div>
+ </div>
+ </div>
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
+   <center>
+   <h1>celebracion en Atlixco</h1>
+ </div>
+   </center>
+   <div data-role="content" align="center">
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Atlixco pueblo magico</h1>
+      <div>
+      </div>
+   <div>
+     <img src="imagenes/atlixco.jpg" width="50%" height="50%"></div>
+     </div>
+     <div>
+<p>
+Durante la temporada vacacional de Semana Santa que se lleva a cabo en el municipio de Atlixco, el alcalde Ricardo Camacho Corripio dio a conocer las tradiciones de fe que distinguen a la entidad que, aunado a los diversos atractivos que la región ofrece, permitirá atraer más de 80 mil visitantes en estos días. Lo anterior representa un impacto en la economía de las familias de la entidad —de manera directa e indirecta— pues se calcula se tenga una derrama económica mayor a los 20 millones de pesos.</p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/santa1.jpg',1)"><img src="imagenes/letrerosanta.jpg" width="310" height="163" id="Image27"></a></p>
+ <div>
+  </div>
+     <p>“Entre las tradiciones que han distinguido a Atlixco es la ‘Procesión del Silencio’ en la comunidad de Nexatengo, la cual es realizada por la cofradía de Nazarenos de la entidad y la ‘Procesión de Engrillados’. Cabe mencionar que ambos eventos son actos de penitencia, fe y de arrepentimiento, mismos que se realizarán el próximo 6 de abril a partir de la seis de la mañana en Santa Lucía Cosamaloapan”, refirió el alcalde.</p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','imagenes/santa3.jpg',1)"><img src="imagenes/letrerosanta.jpg" width="310" height="163" id="Image28"></a></p>
+<div>
+  </div> 
+   <p>Cabe precisar que en la “Procesión de los Engrillados” los participantes se caracterizan por vestir de luto y portar pesadas cadenas de aproximadamente 60 kilos, además de ponerse espinas en el cuerpo. Ellos recorren las principales calle de la ciudad y tienen una preparación, tanto espiritual como física de dos meses. Se realizará también el viernes 6 de abril.</p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','imagenes/santa4.jpg',1)"><img src="imagenes/letrerosanta.jpg" width="310" height="163" id="Image29"></a></p>
+<div>
+ </div>  
+     <p>Asimismo, Camacho Corripio invitó a todos los poblanos y personas de otros estados vecinos a admirar el tapete monumental de “Flores de Primavera”, el cual fue hecho con más de 160 mil plantas y con imágenes alusivas a esta temporada de Semana Santa, y otro con diseños representativos de Atlixco.</p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','imagenes/santa6.jpg',1)"><img src="imagenes/letrerosanta.jpg" width="310" height="163" id="Image30"></a></p>
+<p>Agregó que Atlixco cuenta con servicios turísticos, una gran infraestructura hotelera y una amplia gama de zonas donde puede degustar la gastronomía propia de la entidad, desde sus restaurantes hasta la zona de mercados.</p>
+<div>
+</div>
+  </div>
+    </div>
+   </div>
+<div data-role="footer" data-theme="b">
+  <h4>cesar arturo baez alonso</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
+   <center>
+     <h1>la pasion de cristo en iztapalapa</h1>
+ </div>
+   </center>
+   <div data-role="content" align="center">
+   <p>Iztapalapa, una de las 16 delegaciones que constituyen el Distrito Federal, ha sustituido sus canales, chinampas y trajineras con verduras y flores, por ejes viales y el Metro. Tiene en el Cerro de la Estrella, en sus templos, plazas y jardines de Ia cabecera, los espacios sagrados donde se escenifica cada año la representación ritual por excelencia. La coexistencia de Iztapalapa con la gran urbe, no ha logrado borrar Ias viejas costumbres; sus habitantes renuevan sus lazos de amistad, de compadrazgo y vecindad, de pertenencia e identidad con el barrio y con Ia localidad en las distintas fiestas de su calendario, pero es en la Semana Santa cuando éstos aparecen con mayor fuerza. </p>
+   <p>Los moradores de los ocho barrios: La Asunción, San Ignacio, Santa Bárbara, San Lucas, San Pablo, San Miguel, San Pedro y San José, conviven entre la modernidad y la tradición: los que mantienen un ancestral apego a la tierra y los que llegan y demandan un lugar donde vivir. Comparten una costumbre heredada de muchos años, un deseo de mantener la unidad, a través de la cooperación y el esfuerzo colectivo para representar, con gran realismo, la Pasión de Jesucristo en una fiesta que permite la reafirmación y Ia cohesión cultural de sus residentes.</p>
+   <div>
+     <img src="imagenes/izta1.jpg" width="20%" height="20%"> </div>
+   <p>En los barrios se eligen a los mayordomos; éstos organizan las fiestas, entre ellas, la del Señor de Ia Cuevita; la de San Lucas -conocido popularmente como San Luquitas, patrono de Iztapalapa-, que se celebra el 18 de octubre, con feria, danzantes y a veces octava, y en diciembre la de la Virgen de Guadalupe. En los festejos dedicados a los santos de cada una de las ocho capillas, se levantan arcos de madera adornados con flores y semillas en las entradas de los atrios y de los templos. El Señor de la Cuevita eligió el pueblo, "ya no se quiso ir"; por esta razón le dedicaron un templo y le tienen especial devoción. En la tercera década del siglo pasado, una epidemia de cólera azotó a la población; la creencia popular atribuyó a la divina imagen el cese de la mortandad. En agradecimiento a tan prodigiosa intervención, se inicia la escenificación de la Pasión, con actores del pueblo, y año con año se repite hasta hoy. La ceremonia, fiesta y representación de la Semana Santa, vuelca lo popular hacia lo sagrado, en un hecho que es por un lado civil y por otro religioso. Las autoridades eclesiásticas apoyan estos actos masivos, aunque no los aceptan como totalmente litúrgicos; más bien "dejan hacer" al pueblo, que escenifica desde hace más de 150 años Ia Pasión de Cristo. </p>
+   <div>
+     <img src="imagenes/izta2.jpg" width="20%" height="20%"> </div>
+   <p>Los episodios más importantes tienen lugar el Domingo de Ramos con la Procesión y la Bendición de las Palmas; el Jueves Santo en el Jardín Cuitláhuac, y el Viernes Santo con la secuencia de la sentencia, los azotes, la coronación de espinas y el Vía Crucis que culmnina en el Cerro de la Estrella con la crucifixión. Al conocerse los días en que va a caer la Semana Mayor, comienzan los preparativos y se selecciona a los protagonistas del drama, quienes inician los ensayos desde enero. EI comité organiza dor también tiene que ver con los escenarios y la coordinación de los movimientos de los personajes en los diferentes lugares donde hay representaciones. Así mismo, concerta con las autoridades de la Delegación la suspensión deI tráfico a determinadas horas en los días señalados, las calles por donde pasarán las procesiones, la seguridad de las multitudes que se concentran en las calles, las plazas y los jardines (donde además se establecen los puestos de comida, de antojitos, de diversiones, los juegos mecánicos, todo lo que conforma la feria).   </p>
+   <div>
+     <img src="imagenes/izta3.jpg" width="20%" height="20%"> </div>
+  </div>
+  <div data-role="footer" data-theme="b">
+  <h4>cesar arturo baez alonso</h4>
+   </div>
+ </div>
+ </div>
+ </div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
+   <center>
+   <h1>celebracion en el Vaticano</h1>
+   </div>
+   </center>
+   <div data-role="content" align="center">
+   <p>El Vaticano comenzó este miércoles con los preparativos para celebrar la primera Semana Santa que encabezará el papa Francisco y que comenzará en cuatro días con el domingo de ramos. 
+La Plaza San Pedro amaneció hoy llena de operarios que, en un camión acoplado, trasladaron árboles de olivos, que serán colocados -junto a otros florales- en el centro de la histórica plaza. </p>
+   <div>
+     <img src="imagenes/vaticano1.jpg" width="20%" height="20%"> </div>
+   <p>El papa argentino presidirá el domingo 24 a las 9.30 (hora local, 5.30 hora argentina) la tradicional celebración del domingo de ramos, con la que se inicia la Semana Santa, el tiempo litúrgico más importante para los católicos. 
+Ese día se conmemora cuando Jesús entró triunfalmente en Jerusalén, aclamado como un rey por la gente con ramas y palmas de olivos que cortó de los árboles que se encontraban al lado del camino. </p
+   ><div>
+     <img src="imagenes/vaticano2.jpg" width="20%" height="20%"> </div>
+    <p>Tradicionalmente, el Papa comparte la celebración de ese domingo con los jóvenes, porque fueron justamente los chicos hebreos los que lo recibieron con mayor entusiasmo. En el domingo de ramos de 1985, Juan Pablo II dedicó una carta apostólica a los jóvenes y ese mismo año instituyó las Jornadas Mundiales de la Juventud (JMJ), que se realizaron en Roma por primera vez al año siguiente, con la participación de chicos de todo el mundo. </p>
+<center>
+   <div>
+     <img src="imagenes/vaticano3.jpg" width="20%" height="20%"> </div>
+     </center>
+   <p>La II JMJ tuvo lugar en 1987 en el marco de la recordada visita que el papa polaco hizo a la Argentina, y desde entonces se realiza en distintos países (Francia, Canadá, Alemania, Australia, España fueron las últimas sedes). 
+Este año será el turno será de Brasil, donde la jornadas que convocan multitudes de jóvenes de todo el mundo se congregarán en  Río de Janeiro del 23 al 28 de julio, y se espera que el papa Francisco participe de ellas, convirtiéndose en su primer viaje internacional como pontífice.</p>
+    <center>
+    <div>
+      <p><img src="imagenes/izta2.jpg" width="20%" height="20%"> </p>
+</div>
+    </center>
+   </div>
+ <div data-role="footer" data-theme="b">
+   <h4>cesar arturo baez alonso </h4>
+</div>
+</div>
+ <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
+   <center>
+   <h1>celebracion en Jerusalen</h1>
+</div>
+   </center>
+   <div data-role="content" align="center">
+   <p>El periodo de la Cuaresma está llegando a su fin y tanto los cristianos locales como los miles de peregrinos que han acudido a la Ciudad Santa se están preparando para celebrar Semana Santa y su culminación en el Domingo de Resurrección, la fecha de mayor importancia del año litúrgico cristiano.
+No hay nada como vivir la Semana Santa en Jerusalén.  Celebrar los grandes eventos de la historia de salvación y de la vida de Jesús en los mismos lugares en los que ocurrieron es una experiencia de fe conmovedora e inolvidable para todos los creyentes.</p>
+   <div>
+     <img src="imagenes/jerusalen1.jpg" width="20%" height="20%"> </div>
+    <p>Oficialmente, Semana Santa comienza al conmemorarse la entrada de Jesús en Jerusalén el Domingo de Ramos (1 de abril), con la misa matinal de las 8 en la Iglesia del Santo Sepulcro y la tradicional procesión de Palmas durante la tarde. Más tarde, a las 14.30, miles de cristianos de todo el mundo marcharán jubilosamente desde Betfagé, rezando y cantando en todos los idiomas, descendiendo por la ladera occidental del Monte de los Olivos en camino a la Ciudad Vieja, a través del valle de Kidrón.</p>
+   <div>
+     <img src="imagenes/jerusalen2.jpg" width="20%" height="20%"> </div>
+   <p>El Jueves Santo, el Patriarca Latino de Jerusalén celebrará a las 8 de la mañana la Institución de la Eucaristía en el Santo Sepulcro y por la tarde, a las 15.30, los Franciscanos efectuarán su peregrinación tradicional al Cenáculo (la Sala Superior) en el Monte Sion. Por la noche, a partir de las 21 horas, peregrinos y cristianos locales velarán con Jesucristo durante una hora sagrada de meditación en el Huerto de Getsemaní, seguida de una procesión a la luz de velas a la iglesia de San Pedro en Gallicantu, que según la tradición es el lugar en el que Jesús pasó la noche después de ser arrestado.</p>
+   <div>
+     <img src="imagenes/jerusalen3.jpg" width="20%" height="20%"> </div>
+   <p>En Viernes Santo, a las 8 de la mañana, se conmemorarán la Pasión del Señor y la crucifixión en el Calvario, seguidas del Vía Crucis en la Vía Dolorosa a las 11.30, liderado por el Custos (Custodio) franciscano de Tierra Santa.  Posteriormente, a las 8.10 de la mañana, se celebrará el funeral de Cristo en el Sepulcro, un evento exclusivo de la Iglesia de Jerusalén, que reconstruye la deposición del cuerpo de Cristo en la tumba.
+
+La tan esperada Vigilia Pascual, el punto culminante de la semana, se celebrará el sábado a las 7.30 de la mañana en la Basílica de la Resurrección, seguida de la entrada solemne del Patriarca a las 15.30 y e oficios religiosos vespertinos a las 18 horas.</p>
+   <div>
+     <img src="imagenes/izta2.jpg" width="20%" height="20%"> </div>
+  </div>
+  <div data-role="footer" data-theme="b">
+  <h4>cesar arturo baez alonso  </h4>
+  </div>
+  </div>
+  <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
+   <center>
+    <h1>celebracion en estados Unidos</h1>
+ </div>
+   </center>
+<div data-role="content" align="center">
+   <p>Tomando en cuenta la clasificación anterior, los festejos de Semana Santa en Estados Unidos que conmemoran la pasión de Cristo, se centran en las comunidades de extranjeros.
+
+En Nueva York, por ejemplo, existen algunas hermandades que intentan mantener la tradición religiosa. En la Catedral de San Patricio se encuentra un Cristo Negro, la Hermandad que lo custodia y le rinde culto atrae a una buena cantidad de migrantes guatemaltecos y centroamericanos.</p>
+   <p><img src="imagenes/aue1.jpg" width="20%" height="20%"></p>
+   <p>En California, debido a la gran cantidad de inmigrantes hispanos, las tradiciones religiosas cristianas encuentran más espacio para desarrollarse. Allí se celebrar el Vía Crucis viviente, es decir, la representación teatral de la pasión de Jesucristo que, cada año, atrae a más fieles, principalmente guatemaltecos y salvadoreños, dos pueblos con una profunda tradición cristiana</p>
+    <div>
+      <p><img src="imagenes/aue2.jpg" width="20%" height="20%"></p>
+      <p>En general en los Estados Unidos, no hay procesiones ni, cofradías, ni recogimiento, es más, para la gran mayoría de los norteamericanos ésta semana se caracteriza por ser una semana de vacaciones para los chicos y que marca el comienzo de las primavera.</p>
+      <p><img src="imagenes/aue3.jpg" width="20%" height="20%"></p>
+      <p>En lugar de procesiones, podemos encontrar coloridos desfiles. El más popular es el Desfile de Pascua Florida que parte de la Catedral de San Patricio, patrono irlandés, y se pasea por la Quinta Avenida de Nueva York. A ésta fiesta se la llama Pascua Florida porque el territorio de la Florida estadounidense fue descubierto el domingo de Ramos del año 1512, día en el cual, junto con los ramos, también se llevaban gran cantidad de flores para ser bendecidas</p>
+</div>
+   <div></div>
+</div>
+<div data-role="footer" data-theme="b">
+  <h4>cesar arturo baez alonso.</h4>
+</div>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+</body>
+</html>
